@@ -1,4 +1,4 @@
-# Web_calendar
+# Web Calendar
 
 A Google Calendar-inspired single-page application built with React that allows users to create, manage, and organize events across multiple calendars.
 
@@ -6,9 +6,9 @@ A Google Calendar-inspired single-page application built with React that allows 
 
 ## Overview
 
-Web Calendar is a scheduling application designed to provide an intuitive interface for managing daily events. Users can create multiple calendars, customize their colors, and schedule events with automatic positioning based on their start and end time.
+Web Calendar is a scheduling application that provides an intuitive interface for organizing daily events. Users can create multiple calendars, customize their colors, and manage events with automatic positioning and sizing based on their start and end time.
 
-The project was built to practice building larger React applications, reusable component architecture, global state management, asynchronous data synchronization, and responsive layouts.
+The project focuses on building reusable React components, managing application state with Zustand, and implementing a clean, maintainable application structure.
 
 ---
 
@@ -16,33 +16,34 @@ The project was built to practice building larger React applications, reusable c
 
 ### Calendar Management
 
-- Create new calendars
-- Edit calendar name and color
-- Delete calendars
+- Create, edit, and delete calendars
+- Customize calendar names and colors
 - Toggle calendar visibility
+- Prevent deletion of the last remaining calendar
 
 ### Event Management
 
-- Create events
-- Edit event details
-- Delete events
+- Create, edit, and delete events
 - Assign events to calendars
-- Choose event colors
+- Customize event colors
+- Specify date, start time, and end time for each event
 
 ### Calendar View
 
-- Daily timeline
-- Dynamic event positioning
+- Daily timeline view
+- Automatic event positioning based on start time
 - Event height calculated from duration
+- Current time indicator
 
-### UI
+### User Interface
 
 - Custom modal windows
-- Custom reusable UI components
+- Reusable UI components
 - Color picker
 - Toast notifications
+- Event filtering by active calendars
 
-### Data Management
+### State Management
 
 - Global state management using Zustand
 
@@ -70,9 +71,14 @@ The project was built to practice building larger React applications, reusable c
 ## Installation
 
 ```bash
-git clone ...
+git clone <repository-url>
+
+cd Web_calendar
 
 npm install
+
+npm run dev
+```
 
 npm run dev
 ```
