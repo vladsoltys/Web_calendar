@@ -1,0 +1,97 @@
+.container {
+  width: 240px;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+  background: #fff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.header h2 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 147%;
+  letter-spacing: -0.02em;
+  color: #323749;
+}
+
+.addButton {
+  border: none;
+  background: transparent;
+  font-size: 30px;
+  cursor: pointer;
+  color: #34374c;
+  line-height: 1;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.item:hover {
+  background: #f3f3f5;
+}
+
+.active {
+  background: #f3f3f5;
+}
+
+.calendarName {
+  display: flex;
+  gap: 16px;
+  margin-left: 16px;
+}
+
+.checkbox {
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 183%;
+  letter-spacing: -0.03em;
+  color: #323749;
+}
+
+.name {
+  font-size: 16px;
+  color: #4a4d63;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.button {
+    cursor: pointer;
+}

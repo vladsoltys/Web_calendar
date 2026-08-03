@@ -1,0 +1,59 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.leftSide {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.leftSide img {
+    cursor: pointer;
+}
+
+.rightSide {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.loginField {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.dateSelector {
+  display: flex;
+  gap: 8px;
+}
+
+.dateSelectorBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #dedfe5;
+  border-radius: 8px;
+  padding: 12px 10px;
+  width: 36px;
+  height: 36px;
+  min-height: 36px;
+  box-shadow: 0 1px 2px 0 rgba(16, 24, 40, 0.05);
+  background: #fff;
+  cursor: pointer;
+}
+
+.dateValue {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 129%;
+  letter-spacing: -0.02em;
+  color: #323749;
+}

@@ -1,0 +1,137 @@
+ul,
+li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-family: Inter, sans-serif;
+  width: var(--select-width);
+  border-bottom: 1px solid #323749;
+}
+
+.top {
+  width: var(--select-width);
+  min-width: 88px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  color: #323749;
+}
+
+.value {
+  width: 100%;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 133%;
+  letter-spacing: -0.02em;
+  color: #323749;
+  padding: 7px 0;
+  text-align: left;
+}
+
+.dropDown {
+  position: relative;
+}
+
+.hoursList,
+.dropDownItem,
+.calendarList {
+  position: absolute;
+  left: 0;
+  top: 40px;
+  display: none;
+  z-index: 101;
+}
+
+.hoursList,
+.calendarList {
+  width: 100%;
+  height: 180px;
+  border: 1px solid #dee0e5;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px 0 rgba(49, 49, 49, 0.1);
+  background: #fff;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.hoursList::-webkit-scrollbar {
+  width: 12px;
+}
+
+.hoursList::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.hoursList::-webkit-scrollbar-thumb {
+  height: 40px;
+  background: #bdbdbd;
+  border-radius: 999px;
+  border: 4px solid transparent;
+  background-clip: content-box;
+}
+
+.hoursList::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
+
+.hoursItem {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 133%;
+  letter-spacing: -0.02em;
+  color: #323749;
+  padding: 13px 5px 12px;
+  cursor: pointer;
+}
+
+.calendarItem {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 12px 10px;
+  cursor: pointer;
+}
+
+.calendarItem::before {
+  content: "";
+  display: inline-block;
+  border-radius: 4px;
+  width: 12px;
+  height: 12px;
+  background-color: var(--background-color);
+}
+
+.active {
+  display: block;
+}
+
+.selected {
+  background-color: #e3e3e3;
+}
+
+.calendarIcon {
+  border-radius: 4px;
+  width: 12px;
+  height: 12px;
+  background-color: var(--background-color);
+}

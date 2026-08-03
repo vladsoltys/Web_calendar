@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+button {
+  padding: 0;
+  border: none;
+  background: transparent;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.dayName {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+}
+
+.container {
+  border-radius: 8px;
+  width: 240px;
+  height: 284px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+  background: #fff;
+  padding: 16px 8px;
+}
+
+.date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.dateCurrent {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 147%;
+  letter-spacing: -0.02em;
+  color: #323749;
+}
+
+.dateButtons {
+    display: flex;
+    gap: 8px;
+}
+
+.dateBtn {
+    cursor: pointer;
+}
+
+.days {
+  display: flex;
+  gap: 9px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 183%;
+  letter-spacing: -0.03em;
+  text-align: center;
+  color: #323749;
+  margin-bottom: 9px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: auto;
+  gap: 9px;
+}
+
+.dayCell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 183%;
+  letter-spacing: -0.03em;
+  text-align: center;
+  color: #323749;
+  cursor: pointer;
+}
+
+.otherMonth {
+  opacity: 0.2;
+}
+
+.today {
+    background: #00ae1c;
+    color: #fff;
+    border-radius: 8px;
+}
+
+.selected {
+  outline: 2px solid #dedfe5;;
+}

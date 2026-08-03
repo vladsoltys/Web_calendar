@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  align-items: flex-start;
+  position: absolute;
+  left: 0;
+  right: 0;
+  border-left: 4px solid rgba(0, 0, 0, 0.25);
+  padding: 3px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.eventInfo {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.container h2, .container p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 133%;
+  letter-spacing: -0.02em;
+  color: #323749;
+  margin: 0;
+}
+
+.container p {
+  font-size: 12px;
+}

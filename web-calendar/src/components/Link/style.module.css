@@ -1,0 +1,26 @@
+a {
+    text-decoration: none;
+}
+
+.link {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 133%;
+    letter-spacing: -0.02em;
+    color: #00ae1c;
+    cursor: pointer;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.link:active {
+    color: #0cd52b;
+}
+
+.disabled {
+    color: #575d58;
+    pointer-events: none;
+}

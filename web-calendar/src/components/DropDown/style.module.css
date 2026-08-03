@@ -1,0 +1,84 @@
+ul,
+li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-family: Inter, sans-serif;
+    width: 88px;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    cursor: pointer;
+    padding: 0 15px;
+    border: 1px solid #dedfe5;
+    border-radius: 8px;
+}
+
+.top:hover {
+    background: #efefef;
+}
+
+.top:active {
+    background: #e0e0e0;
+}
+
+.value {
+    width: 100%;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 133%;
+    letter-spacing: -0.02em;
+    color: #323749;
+    padding: 7px 0;
+    text-align: left;
+}
+
+.periodList {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 40px;
+    display: none;
+    border: 1px solid #dee0e5;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px 0 rgba(49, 49, 49, 0.1);
+    background: #fff;
+    overflow: hidden;
+    overflow-y: auto;
+    z-index: 100;
+}
+
+
+.periodItem {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 133%;
+    letter-spacing: -0.02em;
+    color: #323749;
+    padding: 13px 0 12px;
+    text-align: left;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.active {
+    display: block;
+}
+
+.selected {
+    background-color: #e3e3e3;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
