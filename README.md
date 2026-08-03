@@ -37,7 +37,6 @@ The project was built to practice building larger React applications, reusable c
 
 ### UI
 
-- Responsive interface
 - Custom modal windows
 - Custom reusable UI components
 - Color picker
